@@ -142,7 +142,7 @@ body {
 
   // Add a button to mark the task as completed or not completed
   var completedButton = document.createElement('button');
-  completedButton.textContent = assignment.completed ? 'Not Completed' : 'Completed';
+  completedButton.textContent = assignment.completed ? 'Completed' : 'Not Completed';
   completedButton.addEventListener('click', function() {
     assignmentsRef.child(childSnapshot.key).update({ completed: !assignment.completed });
   });
